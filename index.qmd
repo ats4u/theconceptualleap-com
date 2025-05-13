@@ -2,6 +2,9 @@
 title: "theconceptualleap.com"
 ---
 
-This is a Quarto website.
+[Why Japan Can't Swing?](whyjapancantswing.md)
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+
+
+

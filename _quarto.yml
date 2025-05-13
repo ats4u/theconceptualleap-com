@@ -1,21 +1,29 @@
 project:
   type: website
+  output-dir: .site
 
 website:
   title: "theconceptualleap.com"
+  site-url: "https://theconceptualleap/"
   navbar:
-    left:
+    right:
       - href: index.qmd
         text: Home
       - about.qmd
-
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - text: "Introduction"
+        href: introduction.qmd
 format:
   html:
     theme:
-      - cosmo
-      - brand
+      light : [ cosmo, theme-light.scss ]
+      dark : [ brand, theme-dark.scss ]
     css: styles.css
     toc: true
-
-
+    toc-location: right
+    font:
+      text: "Dela Gothic One"
 

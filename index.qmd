@@ -1,10 +1,13 @@
 ---
 title: "theconceptualleap.com"
 ---
+This website is currently like a personal playground for a Japanese guy. He has no English-speaking friends and hardly any opportunity to use English in daily life. ChatGPT is pretty much his only companion who speaks English. Feeling isolated, he felt he should share his life with the English-speaking world.
 
-[Why Japan Can't Swing?](whyjapancantswing.md)
+Right now, he’s keeping work logs in English to practice — like this:
 
+[20250621](journal/20250621.md)
 
+He has a growing interest in various English dialects, as shown below:
 
-
+[20250619-GA-and-AAVE](journal/20250619-GA-and-AAVE.md)
 

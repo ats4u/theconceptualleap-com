@@ -1,29 +1,70 @@
 project:
+  title: "theconceptualleap.com"
   type: website
   output-dir: .site
-
+  preview:
+    port: 5151
+    browser: false
+  resources:
+    - ads.txt
 website:
-  title: "theconceptualleap.com"
-  site-url: "https://theconceptualleap/"
+  title: "The Conceptual Leap"
+  description: "The websites that explains my personal thoughts."
+  site-url: "https://theconceptualleap.com/"
+#  announcement:
+#    content: |
+#       <div class="top-banner">
+#       <img src="attachments/rhythmpedia-header3.png" style="width:100vw"/>
+#      </div>
+#    type: primary
+#    position: above-navbar
+#    dismissable: false
   navbar:
     right:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: "Home"
+    logo: attachments/rhythmpedia-header2.png
   sidebar:
     style: "docked"
     search: true
     contents:
-      - text: "Introduction"
-        href: introduction.qmd
+      - section: "The Conceptual Leap"
+        href: index.qmd
+        contents:
+          - text: Home
+            href: index.qmd
+      - section: "縦乗り理論"
+        href: tatenori-theory/
+        contents:
+          - tatenori-theory/index.md
+#          - tatenori-theory/tatenori-to-reigi.md
+#          - tatenori-theory/tatenori-no-gogen.md
+#
+      - section: "What I Asked to ChatGPT"
+        href: offbeat-count-theory/about.md
+        contents:
+          - journal/20250619-GA-and-AAVE.md
+#      - section: "エッセイ"
+#        href: essays/*.md
+    logo: /attachments/rhythmpedia-header5v2.png
 format:
   html:
     theme:
-      light : [ cosmo, theme-light.scss ]
-      dark : [ brand, theme-dark.scss ]
+      light : [ cosmo,  .assets/websites/theme.scss, .assets/websites/theme-light.scss ]
+      dark  : [ darkly, .assets/websites/theme.scss, .assets/websites/theme-dark.scss ]
+    lightbox: true
+#    filters:
+#      - filters/include-files.lua
     css: styles.css
     toc: true
     toc-location: right
-    font:
-      text: "Dela Gothic One"
+#    include-in-header:
+#       - text: |
+#          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6838486775293179" crossorigin="anonymous"></script>
+#          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    grid:
+      sidebar-width: 300px
+      body-width: 800px
+      margin-width: 600px
+      gutter-width: 1.5rem
 

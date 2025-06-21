@@ -1,0 +1,59 @@
+/*-- scss:defaults --*/
+/*
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+*/
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+}
+
+$font-size-base: 1.20rem;
+$h1-font-size: calc( $font-size-base +  0.5rem ) ;
+$h2-font-size: calc( $font-size-base +  0.10rem ) ;
+$h3-font-size: calc( $font-size-base +  0.08rem ) ;
+$h4-font-size: calc( $font-size-base +  0.06rem ) ;
+$h5-font-size: calc( $font-size-base +  0.04rem ) ;
+$h6-font-size: calc( $font-size-base +  0.02rem  ) ;
+
+/*-- scss:rules --*/
+body {
+  // font-family: 'Atma';
+  // font-family: 'M PLUS 1p';
+  // font-family: 'M PLUS Rounded 1c';
+  // font-size : 1.0rem;
+
+  /*
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size : 0.8em;
+  */
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size : 1.0em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 15px 0px 0px 0px;
+  border-bottom: 1px silver dashed;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  padding:0px;
+}
+
+// h1::before {
+//   content : '☀️ ';
+//   display: inline-block;
+// }
+// h2::before {
+//   content : '🛎️ ';
+//   display: inline-block;
+// }

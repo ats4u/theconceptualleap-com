@@ -514,32 +514,32 @@
     "text": "02:31:07 Updated the mdinchdr command to change the header with a specified level\n#!/bin/bash\n\nexport LANG=en_US.UTF-8\nexport LC_ALL=en_US.UTF-8\nexport PATH=\"/opt/homebrew/bin:$PATH\"\n\n# Read from clipboard\npbpaste &gt; /tmp/input.md\n\nmin_level=$( pandoc /tmp/input.md -t json | jq '[.blocks[] | select(.t==\"Header\") | .c[0]] | min' )\n\nshift_by=$(( 4 - min_level ))\n\n# Convert using pandoc with heading shift\npandoc /tmp/input.md --shift-heading-level-by=$shift_by -f gfm -t gfm -o /tmp/output.md\n\n# Copy the result back to clipboard\npbcopy &lt; /tmp/output.md\n\n# Optional: cleanup\nrm /tmp/input.md /tmp/output.md"
   },
   {
-    "objectID": "journal/20250621.html#starting-lunch-break.",
-    "href": "journal/20250621.html#starting-lunch-break.",
+    "objectID": "journal/20250621.html#revised-the-design-of-theconceptualleap.com",
+    "href": "journal/20250621.html#revised-the-design-of-theconceptualleap.com",
     "title": "Sat, 21 Jun 2025 00:03:10 +0900",
-    "section": "12:00:00 — Starting lunch break.",
-    "text": "12:00:00 — Starting lunch break."
+    "section": "03:58:04 Revised the design of theconceptualleap.com",
+    "text": "03:58:04 Revised the design of theconceptualleap.com"
   },
   {
-    "objectID": "journal/20250621.html#ending-lunch-break.",
-    "href": "journal/20250621.html#ending-lunch-break.",
+    "objectID": "journal/20250621.html#wrote-and-revise-the-explanation-of-mora-tmed-rhythm-and-commited",
+    "href": "journal/20250621.html#wrote-and-revise-the-explanation-of-mora-tmed-rhythm-and-commited",
     "title": "Sat, 21 Jun 2025 00:03:10 +0900",
-    "section": "13:00:00 — Ending lunch break.",
-    "text": "13:00:00 — Ending lunch break."
+    "section": "05:20:19 Wrote and revise the explanation of mora-tmed rhythm and commited",
+    "text": "05:20:19 Wrote and revise the explanation of mora-tmed rhythm and commited"
   },
   {
-    "objectID": "journal/20250621.html#beginning-end-of-day-reflection.",
-    "href": "journal/20250621.html#beginning-end-of-day-reflection.",
+    "objectID": "journal/20250621.html#made-some-commits-for-rhythmpedia.com-and-theconceptualleap.com",
+    "href": "journal/20250621.html#made-some-commits-for-rhythmpedia.com-and-theconceptualleap.com",
     "title": "Sat, 21 Jun 2025 00:03:10 +0900",
-    "section": "18:30:00 — Beginning end-of-day reflection.",
-    "text": "18:30:00 — Beginning end-of-day reflection."
+    "section": "05:42:19 Made some commits for Rhythmpedia.com and theconceptualleap.com",
+    "text": "05:42:19 Made some commits for Rhythmpedia.com and theconceptualleap.com"
   },
   {
     "objectID": "journal/20250621.html#finishing-todays-work.",
     "href": "journal/20250621.html#finishing-todays-work.",
     "title": "Sat, 21 Jun 2025 00:03:10 +0900",
-    "section": "19:00:00 — Finishing today’s work.",
-    "text": "19:00:00 — Finishing today’s work."
+    "section": "05:43:01 — Finishing today’s work.",
+    "text": "05:43:01 — Finishing today’s work."
   },
   {
     "objectID": "journal/20250621.html#work-related-notes",

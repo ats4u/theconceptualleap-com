@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -362,7 +397,16 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#todays-work-plan" id="toc-todays-work-plan" class="nav-link" data-scroll-target="#todays-work-plan">Today’s Work Plan</a></li>
   <li><a href="#todays-work-log" id="toc-todays-work-log" class="nav-link" data-scroll-target="#todays-work-log">Today’s Work Log</a>
   <ul class="collapse">
-  <li><a href="#starting-todays-work." id="toc-starting-todays-work." class="nav-link" data-scroll-target="#starting-todays-work.">09:00:00 — Starting today’s work.</a></li>
+  <li><a href="#starting-todays-work." id="toc-starting-todays-work." class="nav-link" data-scroll-target="#starting-todays-work.">13:00:00 ± — Starting today’s work.</a></li>
+  <li><a href="#fixed-an-issue-that-images-in-rhythmpedia.com-are-shown-lager-than-the-current-screen" id="toc-fixed-an-issue-that-images-in-rhythmpedia.com-are-shown-lager-than-the-current-screen" class="nav-link" data-scroll-target="#fixed-an-issue-that-images-in-rhythmpedia.com-are-shown-lager-than-the-current-screen">13:11:28 Fixed an issue that images in rhythmpedia.com are shown lager than the current screen</a>
+  <ul class="collapse">
+  <li><a href="#q-how-can-you-achieve-to-make-it-only-woks-when-it-is-not-in-the-mobile-mode" id="toc-q-how-can-you-achieve-to-make-it-only-woks-when-it-is-not-in-the-mobile-mode" class="nav-link" data-scroll-target="#q-how-can-you-achieve-to-make-it-only-woks-when-it-is-not-in-the-mobile-mode">Q: How can you achieve to make it only woks when it is not in the mobile mode?</a></li>
+  <li><a href="#ayou-can-restrict-the-css-rule-to-apply-only-on-larger-screens-non-mobile-mode-by-using-a-media-query." id="toc-ayou-can-restrict-the-css-rule-to-apply-only-on-larger-screens-non-mobile-mode-by-using-a-media-query." class="nav-link" data-scroll-target="#ayou-can-restrict-the-css-rule-to-apply-only-on-larger-screens-non-mobile-mode-by-using-a-media-query.">A:You can restrict the CSS rule to apply <strong>only on larger screens (non-mobile mode)</strong> by using a media query.</a></li>
+  <li><a href="#q-will-it-be-harmonized-with-quartos-responsive-behavior" id="toc-q-will-it-be-harmonized-with-quartos-responsive-behavior" class="nav-link" data-scroll-target="#q-will-it-be-harmonized-with-quartos-responsive-behavior">Q: Will it be harmonized with Quarto’s responsive behavior</a></li>
+  <li><a href="#a" id="toc-a" class="nav-link" data-scroll-target="#a">A:</a></li>
+  </ul></li>
+  <li><a href="#learned-how-to-input-in-unicode-hex-input-keyboard-in-macos" id="toc-learned-how-to-input-in-unicode-hex-input-keyboard-in-macos" class="nav-link" data-scroll-target="#learned-how-to-input-in-unicode-hex-input-keyboard-in-macos">13:21:10 Learned how to input ± in Unicode Hex Input keyboard in MacOS</a></li>
+  <li><a href="#starting-a-break." id="toc-starting-a-break." class="nav-link" data-scroll-target="#starting-a-break.">13:22:16 — Starting a break.</a></li>
   <li><a href="#starting-lunch-break." id="toc-starting-lunch-break." class="nav-link" data-scroll-target="#starting-lunch-break.">12:00:00 — Starting lunch break.</a></li>
   <li><a href="#ending-lunch-break." id="toc-ending-lunch-break." class="nav-link" data-scroll-target="#ending-lunch-break.">13:00:00 — Ending lunch break.</a></li>
   <li><a href="#beginning-end-of-day-reflection." id="toc-beginning-end-of-day-reflection." class="nav-link" data-scroll-target="#beginning-end-of-day-reflection.">18:30:00 — Beginning end-of-day reflection.</a></li>
@@ -416,7 +460,121 @@ ul.task-list li input[type="checkbox"] {
 <section id="todays-work-log" class="level1">
 <h1>Today’s Work Log</h1>
 <section id="starting-todays-work." class="level2">
-<h2 class="anchored" data-anchor-id="starting-todays-work.">09:00:00 — Starting today’s work.</h2>
+<h2 class="anchored" data-anchor-id="starting-todays-work.">13:00:00 ± — Starting today’s work.</h2>
+</section>
+<section id="fixed-an-issue-that-images-in-rhythmpedia.com-are-shown-lager-than-the-current-screen" class="level2">
+<h2 class="anchored" data-anchor-id="fixed-an-issue-that-images-in-rhythmpedia.com-are-shown-lager-than-the-current-screen">13:11:28 Fixed an issue that images in rhythmpedia.com are shown lager than the current screen</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">min-width</span><span class="ch">:</span> <span class="dv">768</span><span class="dt">px</span><span class="fu">)</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.lightbox</span> img {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">500</span><span class="dt">px</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">height</span><span class="ch">:</span> <span class="bu">auto</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span><span class="ch">:</span> <span class="dv">block</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">margin-left</span><span class="ch">:</span> <span class="bu">auto</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">margin-right</span><span class="ch">:</span> <span class="bu">auto</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="q-how-can-you-achieve-to-make-it-only-woks-when-it-is-not-in-the-mobile-mode" class="level3">
+<h3 class="anchored" data-anchor-id="q-how-can-you-achieve-to-make-it-only-woks-when-it-is-not-in-the-mobile-mode">Q: How can you achieve to make it only woks when it is not in the mobile mode?</h3>
+<pre><code>.lightbox img {
+  max-width: 500px !important;
+  height: auto !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}</code></pre>
+<p>It worked to change the default size in Quarto websites. Thank you very much for telling me how to achieve it.</p>
+<p>But now I noticed that it breaks when it comes the mobile mode. How can you achieve to make it only woks when it is not in the mobile mode?</p>
+</section>
+<section id="ayou-can-restrict-the-css-rule-to-apply-only-on-larger-screens-non-mobile-mode-by-using-a-media-query." class="level3">
+<h3 class="anchored" data-anchor-id="ayou-can-restrict-the-css-rule-to-apply-only-on-larger-screens-non-mobile-mode-by-using-a-media-query.">A:You can restrict the CSS rule to apply <strong>only on larger screens (non-mobile mode)</strong> by using a media query.</h3>
+<p>You can restrict the CSS rule to apply <strong>only on larger screens (non-mobile mode)</strong> by using a media query. Here’s how to modify your CSS:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">min-width</span><span class="ch">:</span> <span class="dv">768</span><span class="dt">px</span><span class="fu">)</span> {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.lightbox</span> img {</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">max-width</span><span class="ch">:</span> <span class="dv">500</span><span class="dt">px</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">height</span><span class="ch">:</span> <span class="bu">auto</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span><span class="ch">:</span> <span class="dv">block</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">margin-left</span><span class="ch">:</span> <span class="bu">auto</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">margin-right</span><span class="ch">:</span> <span class="bu">auto</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="what-this-does" class="level4">
+<h4 class="anchored" data-anchor-id="what-this-does">✅ What this does:</h4>
+<ul>
+<li>The styles inside <code>@media (min-width: 768px)</code> will <strong>only apply when the screen width is 768 pixels or larger</strong> (i.e., tablets and desktops).</li>
+<li>On mobile devices (narrower than 768px), the image will use the default lightbox styles, which are typically responsive and smaller.</li>
+</ul>
+<p>You can adjust <code>768px</code> to match your design breakpoint if needed (e.g., <code>640px</code>, <code>1024px</code>, etc.).</p>
+<hr>
+</section>
+<section id="related-topics-you-might-want-to-ask-about" class="level4">
+<h4 class="anchored" data-anchor-id="related-topics-you-might-want-to-ask-about">📘 Related topics you might want to ask about:</h4>
+<ul>
+<li>How to apply different image styles in dark mode</li>
+<li>How to override Quarto’s theme-specific image handling</li>
+<li>How to test breakpoints visually in a browser</li>
+</ul>
+<p>Let me know if you’d like to support different styles for tablets vs desktops too.</p>
+</section>
+</section>
+<section id="q-will-it-be-harmonized-with-quartos-responsive-behavior" class="level3">
+<h3 class="anchored" data-anchor-id="q-will-it-be-harmonized-with-quartos-responsive-behavior">Q: Will it be harmonized with Quarto’s responsive behavior</h3>
+<p>Will it be harmonized with Quarto’s responsive behavior</p>
+</section>
+<section id="a" class="level3">
+<h3 class="anchored" data-anchor-id="a">A:</h3>
+<p>Yes — using a media query like <code>@media (min-width: 768px)</code> <strong>is harmonized with Quarto’s responsive design</strong>. Here’s why:</p>
+<hr>
+<section id="why-its-safe-and-harmonized" class="level4">
+<h4 class="anchored" data-anchor-id="why-its-safe-and-harmonized">✅ Why it’s safe and harmonized:</h4>
+<ol type="1">
+<li><p><strong>Quarto uses Bootstrap 5 by default</strong>, which is fully responsive and also uses standard breakpoints like <code>768px</code>, <code>992px</code>, etc.</p>
+<ul>
+<li>So your <code>@media (min-width: 768px)</code> rule aligns exactly with Bootstrap’s <code>md</code> breakpoint (medium devices and up).</li>
+<li>This means your override will <strong>only apply on tablets and larger</strong>, which fits well with Quarto’s layout behavior.</li>
+</ul></li>
+<li><p><strong>Mobile fallback remains untouched.</strong></p>
+<ul>
+<li>On mobile (below 768px), your rule <strong>won’t apply</strong>, and Quarto’s built-in responsive image behavior will take over. This ensures images remain flexible and appropriately sized.</li>
+</ul></li>
+<li><p><strong>No layout breakage expected.</strong></p>
+<ul>
+<li>Your styling just constrains image size and centers it, without hardcoding height or overriding container constraints.</li>
+<li>This makes it <strong>non-invasive</strong> and safe to use alongside Quarto’s default theme logic.</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="you-can-confirm-its-working-harmoniously-by" class="level4">
+<h4 class="anchored" data-anchor-id="you-can-confirm-its-working-harmoniously-by">🧪 You can confirm it’s working harmoniously by:</h4>
+<ul>
+<li>Opening DevTools → Emulating different screen widths</li>
+<li>Checking <code>.lightbox img</code> computed styles at &lt;768px vs ≥768px</li>
+<li>Ensuring images stay within their container and don’t overflow or become blurry</li>
+</ul>
+<hr>
+</section>
+<section id="optional-fine-tuning" class="level4">
+<h4 class="anchored" data-anchor-id="optional-fine-tuning">Optional fine-tuning:</h4>
+<p>If you want images to scale smoothly between small and large screens, you could use a <strong>percentage-based max-width</strong> or clamp units:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css code-with-copy"><code class="sourceCode css"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">@media</span> <span class="fu">(</span><span class="kw">min-width</span><span class="ch">:</span> <span class="dv">768</span><span class="dt">px</span><span class="fu">)</span> {</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">.lightbox</span> img {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">max-width</span><span class="ch">:</span> <span class="fu">clamp(</span><span class="dv">300</span><span class="dt">px</span><span class="op">,</span> <span class="dv">50</span><span class="dt">%</span><span class="op">,</span> <span class="dv">500</span><span class="dt">px</span><span class="fu">)</span> <span class="at">!important</span><span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Let me know if you’d like to harmonize it further with other breakpoints (<code>lg</code>, <code>xl</code>, etc.) or support dark mode too.</p>
+</section>
+</section>
+</section>
+<section id="learned-how-to-input-in-unicode-hex-input-keyboard-in-macos" class="level2">
+<h2 class="anchored" data-anchor-id="learned-how-to-input-in-unicode-hex-input-keyboard-in-macos">13:21:10 Learned how to input ± in Unicode Hex Input keyboard in MacOS</h2>
+<p>Solution : Just press <code>00b1</code> after switching to Unicode Hex Input keyboard.</p>
+<ul>
+<li>± <code>00b1</code> Plus minus.</li>
+<li>— <code>2014</code> Em dash.</li>
+</ul>
+</section>
+<section id="starting-a-break." class="level2">
+<h2 class="anchored" data-anchor-id="starting-a-break.">13:22:16 — Starting a break.</h2>
 </section>
 <section id="starting-lunch-break." class="level2">
 <h2 class="anchored" data-anchor-id="starting-lunch-break.">12:00:00 — Starting lunch break.</h2>

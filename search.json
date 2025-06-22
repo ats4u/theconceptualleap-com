@@ -412,8 +412,29 @@
     "objectID": "journal/20250622.html#starting-todays-work.",
     "href": "journal/20250622.html#starting-todays-work.",
     "title": "Sun, 22 Jun 2025 00:00:25 +0900",
-    "section": "09:00:00 — Starting today’s work.",
-    "text": "09:00:00 — Starting today’s work."
+    "section": "13:00:00 ± — Starting today’s work.",
+    "text": "13:00:00 ± — Starting today’s work."
+  },
+  {
+    "objectID": "journal/20250622.html#fixed-an-issue-that-images-in-rhythmpedia.com-are-shown-lager-than-the-current-screen",
+    "href": "journal/20250622.html#fixed-an-issue-that-images-in-rhythmpedia.com-are-shown-lager-than-the-current-screen",
+    "title": "Sun, 22 Jun 2025 00:00:25 +0900",
+    "section": "13:11:28 Fixed an issue that images in rhythmpedia.com are shown lager than the current screen",
+    "text": "13:11:28 Fixed an issue that images in rhythmpedia.com are shown lager than the current screen\n@media (min-width: 768px) {\n  .lightbox img {\n    max-width: 500px !important;\n    height: auto !important;\n    display: block !important;\n    margin-left: auto !important;\n    margin-right: auto !important;\n  }\n}\n\nQ: How can you achieve to make it only woks when it is not in the mobile mode?\n.lightbox img {\n  max-width: 500px !important;\n  height: auto !important;\n  display: block !important;\n  margin-left: auto !important;\n  margin-right: auto !important;\n}\nIt worked to change the default size in Quarto websites. Thank you very much for telling me how to achieve it.\nBut now I noticed that it breaks when it comes the mobile mode. How can you achieve to make it only woks when it is not in the mobile mode?\n\n\nA:You can restrict the CSS rule to apply only on larger screens (non-mobile mode) by using a media query.\nYou can restrict the CSS rule to apply only on larger screens (non-mobile mode) by using a media query. Here’s how to modify your CSS:\n@media (min-width: 768px) {\n  .lightbox img {\n    max-width: 500px !important;\n    height: auto !important;\n    display: block !important;\n    margin-left: auto !important;\n    margin-right: auto !important;\n  }\n}\n\n✅ What this does:\n\nThe styles inside @media (min-width: 768px) will only apply when the screen width is 768 pixels or larger (i.e., tablets and desktops).\nOn mobile devices (narrower than 768px), the image will use the default lightbox styles, which are typically responsive and smaller.\n\nYou can adjust 768px to match your design breakpoint if needed (e.g., 640px, 1024px, etc.).\n\n\n\n📘 Related topics you might want to ask about:\n\nHow to apply different image styles in dark mode\nHow to override Quarto’s theme-specific image handling\nHow to test breakpoints visually in a browser\n\nLet me know if you’d like to support different styles for tablets vs desktops too.\n\n\n\nQ: Will it be harmonized with Quarto’s responsive behavior\nWill it be harmonized with Quarto’s responsive behavior\n\n\nA:\nYes — using a media query like @media (min-width: 768px) is harmonized with Quarto’s responsive design. Here’s why:\n\n\n✅ Why it’s safe and harmonized:\n\nQuarto uses Bootstrap 5 by default, which is fully responsive and also uses standard breakpoints like 768px, 992px, etc.\n\nSo your @media (min-width: 768px) rule aligns exactly with Bootstrap’s md breakpoint (medium devices and up).\nThis means your override will only apply on tablets and larger, which fits well with Quarto’s layout behavior.\n\nMobile fallback remains untouched.\n\nOn mobile (below 768px), your rule won’t apply, and Quarto’s built-in responsive image behavior will take over. This ensures images remain flexible and appropriately sized.\n\nNo layout breakage expected.\n\nYour styling just constrains image size and centers it, without hardcoding height or overriding container constraints.\nThis makes it non-invasive and safe to use alongside Quarto’s default theme logic.\n\n\n\n\n\n🧪 You can confirm it’s working harmoniously by:\n\nOpening DevTools → Emulating different screen widths\nChecking .lightbox img computed styles at &lt;768px vs ≥768px\nEnsuring images stay within their container and don’t overflow or become blurry\n\n\n\n\nOptional fine-tuning:\nIf you want images to scale smoothly between small and large screens, you could use a percentage-based max-width or clamp units:\n@media (min-width: 768px) {\n  .lightbox img {\n    max-width: clamp(300px, 50%, 500px) !important;\n  }\n}\nLet me know if you’d like to harmonize it further with other breakpoints (lg, xl, etc.) or support dark mode too."
+  },
+  {
+    "objectID": "journal/20250622.html#learned-how-to-input-in-unicode-hex-input-keyboard-in-macos",
+    "href": "journal/20250622.html#learned-how-to-input-in-unicode-hex-input-keyboard-in-macos",
+    "title": "Sun, 22 Jun 2025 00:00:25 +0900",
+    "section": "13:21:10 Learned how to input ± in Unicode Hex Input keyboard in MacOS",
+    "text": "13:21:10 Learned how to input ± in Unicode Hex Input keyboard in MacOS\nSolution : Just press 00b1 after switching to Unicode Hex Input keyboard.\n\n± 00b1 Plus minus.\n— 2014 Em dash."
+  },
+  {
+    "objectID": "journal/20250622.html#starting-a-break.",
+    "href": "journal/20250622.html#starting-a-break.",
+    "title": "Sun, 22 Jun 2025 00:00:25 +0900",
+    "section": "13:22:16 — Starting a break.",
+    "text": "13:22:16 — Starting a break."
   },
   {
     "objectID": "journal/20250622.html#starting-lunch-break.",

@@ -1,0 +1,104 @@
+  .divisions {
+    border : 1px silver solid;
+  }
+  .divisions td {
+    border : 1px silver solid;
+    padding: 10px;
+  }
+  .divisions td.first {
+    border-left : 5px silver double;
+  }
+
+  .divisions tr.r1 td,
+  .divisions tr.r2 td,
+  .divisions tr.r3 td,
+  .divisions tr.r4 td {
+    border-top : 5px silver double;
+  }
+
+  .divisions td.g1,
+  .divisions td.g2,
+  .divisions td.g3,
+  .divisions td.g4,
+
+  .divisions td.b1,
+  .divisions td.b2,
+  .divisions td.b3,
+  .divisions td.b4,
+
+  .divisions td.r1,
+  .divisions td.r2,
+  .divisions td.r3,
+  .divisions td.r4
+  {
+    color : white;
+    font-weight: 1000;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+
+  .divisions td.g1 {
+    background-color : #DFD;
+  }
+  .divisions td.g2 {
+    background-color : #9F9;
+  }
+  .divisions td.g3 {
+    background-color : #5F5;
+  }
+  .divisions td.g4 {
+    background-color : #1F1;
+  }
+  .divisions td.b1 {
+    background-color : #DDF;
+  }
+  .divisions td.b2 {
+    background-color : #99F;
+  }
+  .divisions td.b3 {
+    background-color : #55F;
+  }
+  .divisions td.b4 {
+    background-color : #11F;
+  }
+  .divisions td.r1 {
+    background-color : #FDD;
+  }
+  .divisions td.r2 {
+    background-color : #FAA;
+  }
+  .divisions td.r3 {
+    background-color : #F66;
+  }
+  .divisions td.r4 {
+    background-color : #F22;
+  }
+
+  .perspwrap{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;   /* center horizontally in the column */
+    perspective: var(--persp, 600px);
+    perspective-origin: 50% 0%;
+  }
+
+  .perspinner{
+    position: absolute;
+    transform-origin: top center;
+  }
+
+  .perspinner > table{
+    border-collapse: collapse;
+  }
+
+  .persptable {
+    /*transform: perspective(600px) rotateX(70deg);*/
+    transform-origin: top center;
+    border-collapse: collapse;
+  }
+  .persptable th, 
+  .persptable td {
+    border: 1px solid #666;
+    padding: 0.4em 0.6em;
+    background: white;
+  }

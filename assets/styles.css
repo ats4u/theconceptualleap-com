@@ -1,2 +1,131 @@
+/*
+ *==========================================================
+ * Site Specific Styles
+ *==========================================================
+ */
 
+/*
+.top-banner {
+  width: 100%;
+  background-color: #0000ff;
+  color: white;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  z-index: 1000;
+}
+
+.top-banner p {
+  margin: 0;
+}
+*/
+
+@media (min-width: 768px) {
+  .lightbox img {
+    max-width: 500px !important;
+    height: auto !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+img {
+}
+
+
+/*
+ * ADDED Sun, 10 Aug 2025 09:06:56 +0900
+ */
+.rhythmpedia-iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    max-width:540px;
+}
+.stressed-bak {
+  border : solid 1px black;
+  padding : 1px;
+  bordre-radius:1px;
+}
+
+
+/*
+ * ADDED Sun, 10 Aug 2025 09:11:38 +0900
+ */
+table.offbeat-onbeat-table {
+  border-collapse: collapse;
+  border: black 1px solid;
+  text-align: center;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.offbeat-onbeat-table th,
+table.offbeat-onbeat-table td {
+  border: 1px solid black;
+}
+
+table.offbeat-onbeat-table tr th {
+  width: 5em;
+  overflow: hidden;
+  font-size: smaller;
+  font-weight:1000;
+  background-color: green;
+  color: white;
+  white-space: nowrap;
+}
+table.offbeat-onbeat-table tr th:not(:first-of-type) {
+  background-color: orange;
+  color: white;
+}
+
+body.quarto-dark  table.offbeat-onbeat-table th  {
+  background-color: green;
+  color: white;
+  font-weight:1000;
+}
+
+table.offbeat-onbeat-table td {
+  font-size: small;
+  background-color:orange;
+  color:white;
+  font-weight:1000;
+}
+
+table.offbeat-onbeat-table td.offbeat-td {
+  background-color:white !important;
+  color:black !important;
+  font-weight:400;
+}
+
+.ats4u-twitter-video-caption {
+  text-align: center;
+  font-size:75%;
+  font-weight:300;
+  margin:-10px 10px 10px 10px;
+}
+
+
+/*
+ * Only in dark mode (Quarto adds .quarto-dark on <body>)
+ * Added on 2025/09/04 01:05:14
+ * */
+.quarto-dark img.lilypond {
+  filter: invert(1) hue-rotate(180deg) contrast(0.9) saturate(1.1);
+}
+
+/* If you also emit PNG fallbacks, don't invert those */
+.quarto-dark img.lilypond[src$=".png"] { filter: none; }
+
+
+/*
+ * Show All Lilypond 100%
+ * Added on Thu, 04 Sep 2025 08:31:34 +0900
+ * */
+img.lilypond {
+  width :100% !important;
+  max-width :100% !important;
+}
 

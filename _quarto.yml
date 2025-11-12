@@ -1,70 +1,93 @@
 project:
-  title: "theconceptualleap.com"
+  title: "The Conceptual Leap"
   type: website
   output-dir: .site
   preview:
-    port: 5151
+    port: 5152
     browser: false
-  resources:
-    - ads.txt
+  render:
+    - "**/*.qmd"        # render only qmd
+    - "!**/master*.md"  # explicitly ignore master*.md anywhere 
+    - "!**/master*.qmd" # explicitly ignore master*.md anywhere 
+    - "!drafts/*"       # exclude paths
+  post-render:
+    - rhythmpress sitemap   # Sun, 31 Aug 2025 03:22:23 +0900 runs after every build
+resources:
+  - Ads.txt
+  - _redirects
+  - 404.html
+  - attachments/*
+  - common-ly/*.ly
+  - common-ly/shared/*.ly
+
 website:
   title: "The Conceptual Leap"
   description: "The websites that explains my personal thoughts."
   site-url: "https://theconceptualleap.com/"
-#  announcement:
-#    content: |
-#       <div class="top-banner">
-#       <img src="attachments/rhythmpedia-header3.png" style="width:100vw"/>
-#      </div>
-#    type: primary
-#    position: above-navbar
-#    dismissable: false
+  site-path: /
+  page-footer:
+    left: "© 2025 - The Conceptual Leap - All rights reserved."
+    right: |
+      |
+      [About the Publisher](/about/publisher/en/) |
+      [About This Site](/about/theconceptualleap/en/) |
+      [Contact](/contact/en/) |
+      [Send a Message](/contact-form/en/) |
+      [Disclaimer](/disclaimer/en/) |
+      <br/>
+      |
+      [Privacy Policy](/privacy-policy/en/) |
+      <a href="/cookies/en/">Cookie Policy</a> |
+      <a href="#" id="cookie-settings" rel="nofollow">Cookie Preferences</a> |
+
+  page-navigation: true     # show Previous / Next buttons in the footer
+  bread-crumbs: true
   navbar:
+    logo: /attachments/site-logo-light.png
     right:
       - href: index.qmd
-        text: "Home"
-    logo: attachments/rhythmpedia-header2.png
+        text: "トップに戻る"
   sidebar:
     style: "docked"
-    search: true
-    contents:
-      - section: "The Conceptual Leap"
-        href: index.qmd
-        contents:
-          - text: Home
-            href: index.qmd
-      - section: "縦乗り理論"
-        href: tatenori-theory/
-        contents:
-          - tatenori-theory/index.md
-#          - tatenori-theory/tatenori-to-reigi.md
-#          - tatenori-theory/tatenori-no-gogen.md
-#
-      - section: "What I Asked to ChatGPT"
-        href: offbeat-count-theory/about.md
-        contents:
-          - journal/20250619-GA-and-AAVE.md
-#      - section: "エッセイ"
-#        href: essays/*.md
-    logo: /attachments/rhythmpedia-header5v2.png
+    logo: /attachments/site-logo-light.png
+    collapse-level: 1
+    contents: []
+metadata:
+  lilypond-preamble: "common-ly/lilypond-preamble.ly"
 format:
   html:
+    pandoc:
+      from: markdown+raw_html
     theme:
       light : [ cosmo,  .assets/websites/theme.scss, .assets/websites/theme-light.scss ]
-      dark  : [ darkly, .assets/websites/theme.scss, .assets/websites/theme-dark.scss ]
+      dark  : [ darkly, .assets/websites/theme.scss, .assets/websites/theme-dark.scss  ]
     lightbox: true
-#    filters:
-#      - filters/include-files.lua
-    css: styles.css
+    reference-location: block
+    filters:
+      - filters/meta-dates.lua
+      - filters/include-files.lua
+      - filters/lilypond.lua
+      - filters/remove-softbreaks.lua
+#      - filters/obsidian-image-dimensions.lua
+    css: assets/styles.css
     toc: true
     toc-location: right
-#    include-in-header:
-#       - text: |
-#          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6838486775293179" crossorigin="anonymous"></script>
-#          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    toc-depth: 7
+    toc-expand: 1
+    include-in-header:
+      - text: |
+          <script async type="module" src="/assets/ats4u-twitter-video.mjs"></script>
+          <link href="/assets/groovespace.css" rel="stylesheet" />
+          <script async type="module" src="/assets/groovespace.mjs"></script>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <script async type="module" src="/assets/toc-ul.mjs"></script>
+          <script async type="module" src="/assets/cookie-settings.mjs"></script>
+    page-layout: full      # still allows custom width via CSS
     grid:
-      sidebar-width: 300px
-      body-width: 800px
-      margin-width: 600px
-      gutter-width: 1.5rem
-
+      sidebar-width: 450px
+      body-width: 500px
+      margin-width: 450px
+      gutter-width: 0.5em
+metadata-files:
+  - _sidebar-en.generated.yml
+  - _metadata.yml

@@ -1,0 +1,10 @@
+---
+title: Journal
+created: 2025-11-12T17:31:01
+tags:
+  - foo
+---
+
+test
+
+

@@ -14,3 +14,48 @@ h1, h2, h3, h4, h5, h6 {
   color : #4488ff;
   font-weight: 1200;
 }
+
+/* Quarto puts this class on <body> when dark is active. */
+body.quarto-dark {
+  /* Bootstrap CSS variables – safest way to recolor globally. */
+  --bs-body-bg: #000000;           /* page background */
+  --bs-body-color: #eeeeee;        /* text */
+  --bs-border-color: #1c2128;      /* borders */
+  --bs-card-bg: #0f1115;           /* cards/callouts base */
+  --bs-link-color: #8ab4f8;        /* links */
+  --bs-link-hover-color: #a5c8ff;
+
+  /* Code areas */
+  --bs-code-color: #c9d1d9;
+}
+
+
+/* Dark-mode only */
+body.quarto-dark #quarto-sidebar,
+body.quarto-dark .sidebar,
+body.quarto-dark .sidebar .sidebar-menu-container {
+  background-color: #000000 !important;  /* your color */
+  border-right: 1px solid #1c2128 !important;
+}
+
+/* Sidebar links */
+body.quarto-dark #quarto-sidebar .sidebar-item a {
+  color: #e6edf3;
+}
+body.quarto-dark #quarto-sidebar .sidebar-item a:hover {
+  background-color: #0f141a;
+  color: #ffffff;
+}
+
+/* Active/current page */
+body.quarto-dark #quarto-sidebar .active > a,
+body.quarto-dark #quarto-sidebar .sidebar-item a.active {
+  background-color: #11151b;
+  color: #ffffff;
+}
+
+/* Optional: right-hand TOC (“margin” sidebar) */
+body.quarto-dark #quarto-margin-sidebar {
+  background-color: #000000 !important;
+  border-left: 1px solid #1c2128 !important;
+}

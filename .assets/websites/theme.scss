@@ -1,53 +1,301 @@
 /*-- scss:defaults --*/
-/*
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
-*/
+// @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/*
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {}
 
-body {
+/* Hide the "On This Page" caption on the right sidebar.*/
+#quarto-sidebar>h2,
+/* old layout */
+.sidebar-title,
+/* newer layout */
+#toc-title {
+  /* fallback */
+  display: none !important;
 }
 
-$font-size-base: 1.20rem;
-$h1-font-size: calc( $font-size-base +  0.5rem ) ;
-$h2-font-size: calc( $font-size-base +  0.10rem ) ;
-$h3-font-size: calc( $font-size-base +  0.08rem ) ;
-$h4-font-size: calc( $font-size-base +  0.06rem ) ;
-$h5-font-size: calc( $font-size-base +  0.04rem ) ;
-$h6-font-size: calc( $font-size-base +  0.02rem  ) ;
+/* Hide texts inside the container and set the logo of the website */
+.quarto-title h1:first-of-type::before {
+  content: "";
+  display: inline-block;
+  // text-indent: -9999px;
+  background-image: url("attachments/rhythmdo-logo-light.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 300px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
 
+body.quarto-dark .quarto-title h1:first-of-type::before {
+  background-image: url("attachments/rhythmdo-logo-dark.png");
+}
+
+
+
+
+/*
+.navbar-logo {
+  background-image: url("attachments/rhythmdo-logo-dark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 300px;
+  width: 600px;
+}
+.body.quarto-dark .navbar-logo {
+  background-color: red;
+  background-image: url("attachments/rhythmdo-logo-dark.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 300px;
+  width: 600px;
+}
+*/
+
+
+/*
+ *
+ * Manage Sidebar's Logo
+ *
+ */
+/* Hide the default <img> Quarto renders */
+.sidebar-logo-link img.sidebar-logo {
+  display: none !important;
+}
+
+/* Paint the link itself */
+.sidebar-logo-link {
+  display: block;
+  width:  220px;          /* <-- set to your logo width */
+  height: 100px;          /* <-- set to your logo height */
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+/* Light mode */
+.quarto-light .sidebar-logo-link {
+  background-image: url("/attachments/rhythmdo-logo-light.png");
+}
+
+/* Dark mode */
+.quarto-dark .sidebar-logo-link {
+  background-image: url("/attachments/rhythmdo-logo-dark.png");
+}
+
+/*
+ * Setting the Navbar Icon
+ * Wed, 01 Oct 2025 19:26:28 +0900
+ */
+.navbar-title {
+  display: block;
+}
+.navbar-logo {
+  display: none;
+}
+
+
+// .navbar-brand-logo {
+//   --src: url( "/attachments/rhythmdo-logo-light.png" ); /* full image */
+//   --x: 200px;   /* left of crop in source image */
+//   --y: 0px;    /* top of crop in source image */
+//   --w: 800px;    /* crop width  */
+//   --h: 250px;    /* crop height */
+//   --orig-w: 1000px;    /* crop width  */
+//   --orig-h: 400px;    /* crop height */
+//   --scale: calc( 1 / 4 );   /* 2 for @2x images, etc. */
+//
+//   content:           "";
+//   display:           inline-block;
+//   width:             calc( var(--w) * var(--scale) );
+//   height:            calc( var(--h) * var(--scale) );
+//   background-image : var(--src);
+//   background-repeat: no-repeat;
+//   margin:0px;
+//   padding:0px;
+//   border:0px;
+//
+//   /* Move the desired region under the box */
+//   background-position:
+//     calc(-1 * var(--x) * var(--scale) * 0.5 )
+//     calc(-1 * var(--y) * var(--scale) * 0.5 );
+//
+//   /* If the source will be scaled, set the scaled size here. 
+//      Omit if using natural pixel size. */
+//   background-size: calc( var(--orig-w) * var(--scale)) calc( var(--orig-h) * var(--scale));
+//   margin-right: 0px;
+//   vertical-align: middle;
+// }
+
+.navbar-brand-logo {
+}
+
+.quarto-light .navbar-brand-logo {
+  --src: url( "/attachments/rhythmdo-logo-light.png" ); /* full image */
+}
+.quarto-dark .navbar-brand-logo {
+  --src: url( "/attachments/rhythmdo-logo-dark.png" ); /* full image */
+}
+/*
+ *
+ *
+ *
+ */
+
+/* Center-align images, tweets, youtube videos within the container */
+.center-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // border: 2px dotted rgb(96 139 168);
+}
+
+.center-box blockquote,
+.center-box div,
+.center-box iframe {
+  width: 100%;
+  // height: 100px;
+  // border: 2px solid rgb(96 139 168);
+  // border-radius: 5px;
+  // background-color: rgb(96 139 168 / 0.2);
+}
+.sidebar-navigation {
+  padding-left:0px !important;
+}
+
+
+$font-size-base: 0.9em; // calc( 1em / 30 ); // 1.20rem;
+$font-size-step: calc(1em / 30); // 1.20rem;
+$h1-font-size: calc($font-size-base + 1.50em); // 0.5rem  
+$h2-font-size: calc($font-size-base + 1.00em); // 0.10rem 
+$h3-font-size: calc($font-size-base + 0.50em); // 0.08rem 
+$h4-font-size: calc($font-size-base + 0.15em); // 0.06rem 
+$h5-font-size: calc($font-size-base + 0.00em); // 0.04rem 
+$h6-font-size: calc($font-size-base - 0.15em); // 0.02rem 
+
+$line-height : 1.5em;
+
+:root{
+  --bs-font-weight-bold: 1000;
+}
+
+.quarto-article b,
+.quarto-article strong {
+  font-weight: var(--bs-font-weight-bold) !important;
+}
+
+// root {
+//   --bs-body-font-size:  $font-size-base;
+// }
+/* apply it to sidebar nav text */
+// .quarto-sidebar,
+// .sidebar,
+// .sidebar-navigation .sidebar-item,
+// .sidebar-section    .sidebar-item
+// .sidebar-navigation .sidebar-item,
+// .sidebar-section    .sidebar-item,
+
+.quarto-sidebar,
+.sidebar ul,
+.sidebar li,
+{
+  line-height: $line-height;
+}
+
+.nav-link,
+/* 
+ * Quarto's margin (right) sidebar TOC list. The built-in stylesheet sets
+ * `font-size: 0.875rem` on this <ul>, which forces all nested links in the
+ * "On this page" menu to stay small. Overriding this selector restores normal
+ * (body) font size and line height.
+ */
+.sidebar nav[role="doc-toc"] > ul,
+.quarto-title-breadcrumbs .breadcrumb,
+.margin-sidebar ,
+.sidebar-item
+{
+  font-size: inherit !important;
+  line-height: $line-height;
+}
 /*-- scss:rules --*/
 body {
-  // font-family: 'Atma';
+  // --bs-body-font-size : $font-size-base;
   // font-family: 'M PLUS 1p';
-  // font-family: 'M PLUS Rounded 1c';
-  // font-size : 1.0rem;
 
   /*
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-size : 0.8em;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: 700;
+    font-size : 0.85em;
   */
-  font-family: "Lato", sans-serif;
+
+  font-family: "M PLUS 1", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  font-size : 1.0em;
+  // font-size: $font-size-base ;
+  line-height: $line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+@supports (-moz-appearance: none) {
+  rt {
+    line-height:1.0em;
+    margin-bottom: -0.5em;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 1000;
   margin: 15px 0px 0px 0px;
-  border-bottom: 1px silver dashed;
   margin-top: 40px;
   margin-bottom: 5px;
-  padding:0px;
+  padding: 0px;
+  padding-left: 15px;
+  padding-bottom: 5px;
 }
+
+h1 {
+  // border-bottom: 5px silver double;
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  // border: double 5px silver;
+}
+
+h2 {
+  text-align: center;
+  padding: 30px 0px 30px 0px;
+  border: double 5px silver;
+  border-bottom: 5px silver double;
+}
+
+h3 {
+  border-bottom: 5px silver double;
+}
+
+h4 {
+  border-bottom: 3px silver solid;
+}
+
+h5 {
+  border-bottom: 1px silver solid;
+}
+
+h6 {
+  border-bottom: 1px silver solid;
+}
+
 
 // h1::before {
 //   content : '☀️ ';
@@ -57,3 +305,119 @@ h1, h2, h3, h4, h5, h6 {
 //   content : '🛎️ ';
 //   display: inline-block;
 // }
+
+
+
+/* Outermost unordered/ordered lists */
+ul:not(ul ul):not(ul ol),
+ol:not(ol ol):not(ol ul) {
+  margin-left: 1em;
+  /* increase only top-level margin */
+  margin-bottom: 1em;
+  /* increase only top-level margin */
+}
+
+/* Outermost definition lists */
+dl:not(dl dl):not(dl ul):not(dl ol) {
+  margin-left: 1em;
+  /* increase only top-level margin */
+  margin-bottom: 1em;
+  /* increase only top-level margin */
+}
+
+
+
+
+
+
+/* ADDED Sun, 10 Aug 2025 07:20:05 +0900 */
+/* Make page navigation buttons bigger and styled */
+.nav-page {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+
+.nav-page a {
+  display: inline-block;
+  background: var(--bs-primary);
+  color: white !important;
+  padding: 0.6rem 1.2rem;
+  // font-size: 0.9em;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background 0.2s ease-in-out;
+}
+
+.nav-page a:hover {
+  background: var(--bs-primary-dark, #0056b3);
+}
+
+
+/*  **** */
+
+/* Force breadcrumbs to bottom-align text */
+.breadcrumb {
+  display: flex;
+  align-items: flex-end;
+}
+
+.breadcrumb li,
+.breadcrumb a {
+  display: inline-flex;
+  align-items: flex-end;
+}
+
+
+.nav-footer-left {
+  white-space: nowrap;
+}
+.nav-footer-right {
+  white-space: nowrap;
+}
+
+
+/* 
+ * Counter to double showing search icons
+ */
+#quarto-search .aa-Autocomplete + .aa-Autocomplete { display: none !important; }
+
+
+
+
+/* 
+ * Hide the large hamburger (navbar toggle) 
+ * Tue, 16 Sep 2025 11:05:07 +0900
+ */
+.navbar-toggler {
+  display: none !important;
+}
+
+
+/* Limit maximum width of main content Sun, 19 Oct 2025 13:42:17 +0900 */
+// main.content {
+//   max-width: 600px;      /* adjust to taste: 800-1000px typical */
+//   min-width: 400px;
+//   margin-left: 0 !important;
+//   margin-right: 0 !important;
+// }
+
+#quarto-sidebar {
+  // width: 600px;      /* adjust to taste: 800-1000px typical */
+  //  max-width: 600px;      /* adjust to taste: 800-1000px typical */
+  // margin-left: auto;
+  // margin-right: 0;
+}
+// #quarto-margin-sidebar {
+//   left:auto;
+//   // width: 400px;      /* adjust to taste: 800-1000px typical */
+//   max-width: 400px;      /* adjust to taste: 800-1000px typical */
+//   margin-left: 0;
+//   margin-right: auto;
+// }
+
+
+

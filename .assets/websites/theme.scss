@@ -23,7 +23,7 @@ body {}
   content: "";
   display: inline-block;
   // text-indent: -9999px;
-  background-image: url("attachments/rhythmdo-logo-light.png");
+  background-image: url("attachments/site-logo-light.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -34,7 +34,7 @@ body {}
 }
 
 body.quarto-dark .quarto-title h1:first-of-type::before {
-  background-image: url("attachments/rhythmdo-logo-dark.png");
+  background-image: url("attachments/site-logo-dark.png");
 }
 
 
@@ -42,7 +42,7 @@ body.quarto-dark .quarto-title h1:first-of-type::before {
 
 /*
 .navbar-logo {
-  background-image: url("attachments/rhythmdo-logo-dark.png");
+  background-image: url("attachments/site-logo-dark.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -51,7 +51,7 @@ body.quarto-dark .quarto-title h1:first-of-type::before {
 }
 .body.quarto-dark .navbar-logo {
   background-color: red;
-  background-image: url("attachments/rhythmdo-logo-dark.png");
+  background-image: url("attachments/site-logo-dark.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -83,12 +83,12 @@ body.quarto-dark .quarto-title h1:first-of-type::before {
 
 /* Light mode */
 .quarto-light .sidebar-logo-link {
-  background-image: url("/attachments/rhythmdo-logo-light.png");
+  background-image: url("/attachments/site-logo-light.png");
 }
 
 /* Dark mode */
 .quarto-dark .sidebar-logo-link {
-  background-image: url("/attachments/rhythmdo-logo-dark.png");
+  background-image: url("/attachments/site-logo-dark.png");
 }
 
 /*
@@ -104,7 +104,7 @@ body.quarto-dark .quarto-title h1:first-of-type::before {
 
 
 // .navbar-brand-logo {
-//   --src: url( "/attachments/rhythmdo-logo-light.png" ); /* full image */
+//   --src: url( "/attachments/site-logo-light.png" ); /* full image */
 //   --x: 200px;   /* left of crop in source image */
 //   --y: 0px;    /* top of crop in source image */
 //   --w: 800px;    /* crop width  */
@@ -139,10 +139,10 @@ body.quarto-dark .quarto-title h1:first-of-type::before {
 }
 
 .quarto-light .navbar-brand-logo {
-  --src: url( "/attachments/rhythmdo-logo-light.png" ); /* full image */
+  --src: url( "/attachments/site-logo-light.png" ); /* full image */
 }
 .quarto-dark .navbar-brand-logo {
-  --src: url( "/attachments/rhythmdo-logo-dark.png" ); /* full image */
+  --src: url( "/attachments/site-logo-dark.png" ); /* full image */
 }
 /*
  *

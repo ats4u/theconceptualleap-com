@@ -1,4 +1,4 @@
-name: Build & Deploy Rhythmpedia (rhythmpress)
+name: Build & Deploy theconceptualleap (rhythmpress)
 
 on:
   push:

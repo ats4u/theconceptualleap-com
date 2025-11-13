@@ -3,14 +3,14 @@ title: GA and AAVE
 created: 2025-06-20T01:17
 tags: []
 ---
-## Q
+### Q
 What is GA consonants?
 
-## A
+### A
 
 The term **“GA consonants”** isn’t a standard linguistic term on its own, but based on context, it likely refers to **consonants in General American (GA) English pronunciation**.
 
-### 🧠 What is GA?
+#### 🧠 What is GA?
 
 **General American (GA)** is a widely accepted accent of American English often used as a standard in:
 
@@ -27,7 +27,7 @@ It’s not tied to one geographic area but is common in the Midwest and West of 
 
 ---
 
-### 🎙️ GA Consonants – What Does It Usually Mean?
+#### 🎙️ GA Consonants – What Does It Usually Mean?
 
 It likely refers to how **consonants are realized (pronounced)** in General American English. For example:
 
@@ -41,7 +41,7 @@ It likely refers to how **consonants are realized (pronounced)** in General Amer
 
 ---
 
-### 🧩 If you meant something else by "GA consonants" — for example:
+#### 🧩 If you meant something else by "GA consonants" — for example:
 
 - GA = Georgia (language family, e.g., Georgian)
     
@@ -56,7 +56,7 @@ Let me know — I can reinterpret based on that.
 
 Would you like a list of all GA consonants with IPA symbols and examples?
 
-## Q
+### Q
 What are the differences between AAVE and GA
 
 # A
@@ -64,7 +64,7 @@ The differences between **AAVE (African American Vernacular English)** and **GA 
 
 ---
 
-## 🔊 1. **Pronunciation / Phonology**
+### 🔊 1. **Pronunciation / Phonology**
 
 | Feature                               | AAVE                                             | General American (GA)                  |
 | ------------------------------------- | ------------------------------------------------ | -------------------------------------- |
@@ -77,7 +77,7 @@ The differences between **AAVE (African American Vernacular English)** and **GA 
 
 ---
 
-## 📚 2. **Grammar / Syntax**
+### 📚 2. **Grammar / Syntax**
 
 | Feature                      | AAVE                                                 | GA                                                  |
 | ---------------------------- | ---------------------------------------------------- | --------------------------------------------------- |
@@ -91,7 +91,7 @@ The differences between **AAVE (African American Vernacular English)** and **GA 
 
 ---
 
-## 🗣️ 3. **Vocabulary / Lexicon**
+### 🗣️ 3. **Vocabulary / Lexicon**
 
 | Concept              | AAVE                                                      | GA                              |
 | -------------------- | --------------------------------------------------------- | ------------------------------- |
@@ -101,7 +101,7 @@ The differences between **AAVE (African American Vernacular English)** and **GA 
 
 ---
 
-## 🧠 4. **Sociolinguistic Status**
+### 🧠 4. **Sociolinguistic Status**
 
 | Feature            | AAVE                                                   | GA                                    |
 | ------------------ | ------------------------------------------------------ | ------------------------------------- |
@@ -111,7 +111,7 @@ The differences between **AAVE (African American Vernacular English)** and **GA 
 
 ---
 
-## 🧾 Summary
+### 🧾 Summary
 
 | Area               | AAVE                                                   | GA                                     |
 | ------------------ | ------------------------------------------------------ | -------------------------------------- |

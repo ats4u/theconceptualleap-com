@@ -1,13 +1,42 @@
 ---
-title: "theconceptualleap.com"
+title: "The Conceptual Leap"
+format: html
+execute:
+  enabled: true
+  echo: false
+  output: true
+  eval: true
+  cache: false
+title-block: false
+
 ---
+
+<Style>
+h1 {
+  color : #888;
+}
+</style>
+
 This website is currently like a personal playground for a Japanese guy. He has no English-speaking friends and hardly any opportunity to use English in daily life. ChatGPT is pretty much his only companion who speaks English. Feeling isolated, he felt he should share his life with the English-speaking world.
 
 Right now, he’s keeping work logs in English to practice — like this:
 
-[20250621](journal/20250621.md)
 
+## Notes
 He has a growing interest in various English dialects, as shown below:
 
 [20250619-GA-and-AAVE](journal/20250619-GA-and-AAVE.md)
 
+## Foo
+
+```{python}
+#| output: asis
+print("HOOO")
+from pathlib import Path
+from rhythmpress import rhythmpress
+out = rhythmpress.create_global_navigation( '_rhythmpress.conf', 'en', strict=False )
+print(out)
+print("HOOO")
+```
+
+<!-- JOdlVTkY5nsuMw2bXN6x+A== -->

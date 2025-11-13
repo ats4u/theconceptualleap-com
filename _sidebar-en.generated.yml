@@ -1,4 +1,11 @@
 website:
   sidebar:
     contents:
-      - journal/en/index.qmd
+      - section: "Journal"
+        href: journal/en/index.qmd
+        contents:
+          - journal/worklog-20250622/en/index.qmd
+          - journal/worklog-20250621/en/index.qmd
+          - journal/worklog-20250620/en/index.qmd
+          - journal/worklog-20250619/en/index.qmd
+          - journal/chat20250619/en/index.qmd

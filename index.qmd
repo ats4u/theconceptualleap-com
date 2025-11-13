@@ -23,12 +23,10 @@ Right now, he’s keeping work logs in English to practice — like this:
 
 ```{python}
 #| output: asis
-print("HOOO")
 from pathlib import Path
 from rhythmpress import rhythmpress
 out = rhythmpress.create_global_navigation( '_rhythmpress.conf', 'en', strict=False )
 print(out)
-print("HOOO")
 ```
 
 <!-- JOdlVTkY5nsuMw2bXN6x+A== -->

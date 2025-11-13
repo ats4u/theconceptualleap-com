@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Journal – The Conceptual Leap</title>
+<title>qmdspl-exec – The Conceptual Leap</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,32 +20,65 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../journal/worklog-20250622/en/index.html" rel="next">
-<link href="../../notes/chat20250619/en/index.html" rel="prev">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d5cb3375aa46842071c46b1e5e52c2c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-b787f3aee0ec2d81c9bc82614bdd9598.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-d5cb3375aa46842071c46b1e5e52c2c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../../../">
+<script src="../../../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../../../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ef56b68f8fa1e9d2ba328e99e439f80.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../../../../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../../../site_libs/bootstrap/bootstrap-d5cb3375aa46842071c46b1e5e52c2c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../../../site_libs/bootstrap/bootstrap-dark-b787f3aee0ec2d81c9bc82614bdd9598.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../../../../site_libs/bootstrap/bootstrap-d5cb3375aa46842071c46b1e5e52c2c0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,15 +106,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script async="" type="module" src="../../assets/ats4u-twitter-video.mjs"></script>
-<link href="../../assets/groovespace.css" rel="stylesheet">
-<script async="" type="module" src="../../assets/groovespace.mjs"></script>
+<script async="" type="module" src="../../../../../../assets/ats4u-twitter-video.mjs"></script>
+<link href="../../../../../../assets/groovespace.css" rel="stylesheet">
+<script async="" type="module" src="../../../../../../assets/groovespace.mjs"></script>
 <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<script async="" type="module" src="../../assets/toc-ul.mjs"></script>
-<script async="" type="module" src="../../assets/cookie-settings.mjs"></script>
+<script async="" type="module" src="../../../../../../assets/toc-ul.mjs"></script>
+<script async="" type="module" src="../../../../../../assets/cookie-settings.mjs"></script>
 
 
-<link rel="stylesheet" href="../../assets/styles.css">
+<link rel="stylesheet" href="../../../../../../assets/styles.css">
 </head>
 
 <body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -253,7 +286,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../../../../index.html">
     <span class="navbar-title">The Conceptual Leap</span>
     </a>
   </div>
@@ -264,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
 </ul>
@@ -279,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../journal/en/index.html">Journal</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -293,7 +326,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../notes/en/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../../../../../notes/en/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Notes</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -302,7 +335,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/chat20250619/en/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../notes/chat20250619/en/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025/06/19 GA and AAVE</span></a>
   </div>
 </li>
@@ -310,7 +343,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../journal/en/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../../../../../journal/en/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Journal</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -319,25 +352,25 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../journal/worklog-20250622/en/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../journal/worklog-20250622/en/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025/06/22</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../journal/worklog-20250621/en/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../journal/worklog-20250621/en/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025/06/21</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../journal/worklog-20250620/en/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../journal/worklog-20250620/en/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025/06/20</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../journal/worklog-20250619/en/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../../../../../journal/worklog-20250619/en/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2025/06/19</span></a>
   </div>
 </li>
@@ -353,124 +386,364 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#journal" id="toc-journal" class="nav-link active" data-scroll-target="#journal">Journal</a>
+  <li><a href="#quarto-section-splitter-program-full-specification" id="toc-quarto-section-splitter-program-full-specification" class="nav-link active" data-scroll-target="#quarto-section-splitter-program-full-specification">✅ <strong>Quarto Section Splitter Program – Full Specification</strong></a>
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section">2025/06/22</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2025/06/21</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2025/06/20</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2025/06/19</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">🧭 Overview</a></li>
+  <li><a href="#input" id="toc-input" class="nav-link" data-scroll-target="#input">📥 Input</a>
+  <ul>
+  <li><a href="#input-files" id="toc-input-files" class="nav-link" data-scroll-target="#input-files">1. <strong>Input Files</strong></a></li>
+  <li><a href="#expected-content-format" id="toc-expected-content-format" class="nav-link" data-scroll-target="#expected-content-format">2. <strong>Expected Content Format</strong></a></li>
+  </ul></li>
+  <li><a href="#parsing-logic" id="toc-parsing-logic" class="nav-link" data-scroll-target="#parsing-logic">🔍 Parsing Logic</a>
+  <ul>
+  <li><a href="#header-detection" id="toc-header-detection" class="nav-link" data-scroll-target="#header-detection">1. <strong>Header Detection</strong></a>
+  <ul>
+  <li><a href="#level-2-headers" id="toc-level-2-headers" class="nav-link" data-scroll-target="#level-2-headers">Level-2 (<code>##</code>) Headers</a></li>
+  <li><a href="#level-3-headers" id="toc-level-3-headers" class="nav-link" data-scroll-target="#level-3-headers">Level-3 (<code>###</code>) Headers</a></li>
+  </ul></li>
+  <li><a href="#auto-id-generation" id="toc-auto-id-generation" class="nav-link" data-scroll-target="#auto-id-generation">2. <strong>Auto ID Generation</strong></a></li>
+  <li><a href="#ruby-annotation-handling" id="toc-ruby-annotation-handling" class="nav-link" data-scroll-target="#ruby-annotation-handling">3. <strong>Ruby Annotation Handling</strong></a></li>
+  </ul></li>
+  <li><a href="#output" id="toc-output" class="nav-link" data-scroll-target="#output">📦 Output</a>
+  <ul>
+  <li><a href="#directory-structure" id="toc-directory-structure" class="nav-link" data-scroll-target="#directory-structure">1. <strong>Directory Structure</strong></a></li>
+  <li><a href="#file-contents" id="toc-file-contents" class="nav-link" data-scroll-target="#file-contents">2. <strong>File Contents</strong></a>
+  <ul>
+  <li><a href="#a.-section-file-index.qmd" id="toc-a.-section-file-index.qmd" class="nav-link" data-scroll-target="#a.-section-file-index.qmd">a. Section File (<code>index.qmd</code>)</a></li>
+  <li><a href="#b.-master-index-lang_idindex.qmd" id="toc-b.-master-index-lang_idindex.qmd" class="nav-link" data-scroll-target="#b.-master-index-lang_idindex.qmd">b. Master Index (<code>&lt;lang_id&gt;/index.qmd</code>)</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#behavioral-summary" id="toc-behavioral-summary" class="nav-link" data-scroll-target="#behavioral-summary">🧠 Behavioral Summary</a></li>
+  <li><a href="#program-flow" id="toc-program-flow" class="nav-link" data-scroll-target="#program-flow">⚙️ Program Flow</a>
+  <ul>
+  <li><a href="#discover-input-files" id="toc-discover-input-files" class="nav-link" data-scroll-target="#discover-input-files">1. Discover input files</a></li>
+  <li><a href="#for-each-file" id="toc-for-each-file" class="nav-link" data-scroll-target="#for-each-file">2. For each file:</a></li>
+  <li><a href="#in-split_qmd..." id="toc-in-split_qmd..." class="nav-link" data-scroll-target="#in-split_qmd...">3. In <code>split_qmd(...)</code>:</a></li>
+  </ul></li>
+  <li><a href="#limitations-to-do" id="toc-limitations-to-do" class="nav-link" data-scroll-target="#limitations-to-do">⚠️ Limitations / To-Do</a></li>
+  <li><a href="#example-case" id="toc-example-case" class="nav-link" data-scroll-target="#example-case">🧪 Example Case</a>
+  <ul>
+  <li><a href="#input-master-ja.qmd" id="toc-input-master-ja.qmd" class="nav-link" data-scroll-target="#input-master-ja.qmd">Input: <code>master-ja.qmd</code></a></li>
+  <li><a href="#output-1" id="toc-output-1" class="nav-link" data-scroll-target="#output-1">Output:</a>
+  <ul>
+  <li><a href="#directory-structure-1" id="toc-directory-structure-1" class="nav-link" data-scroll-target="#directory-structure-1">Directory Structure:</a></li>
+  <li><a href="#jaindex.qmd" id="toc-jaindex.qmd" class="nav-link" data-scroll-target="#jaindex.qmd"><code>ja/index.qmd</code>:</a></li>
+  </ul></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
-
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Journal</h1>
-</div>
+<main class="content column-body" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-body">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<section id="journal" class="level2">
-<h2 class="anchored" data-anchor-id="journal">Journal</h2>
+<p>Absolutely. Below is a <strong>comprehensive, exhaustive, and up-to-date specification</strong> of your latest Quarto Markdown splitter program, reflecting the exact behavior of the code you provided.</p>
+<hr>
+<section id="quarto-section-splitter-program-full-specification" class="level1">
+<h1>✅ <strong>Quarto Section Splitter Program – Full Specification</strong></h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">🧭 Overview</h2>
+<p>This Python program parses and splits a <strong>Quarto <code>.qmd</code> master file</strong> (<code>master-&lt;lang&gt;.qmd</code>) into multiple section-based files based on <code>##</code> (level-2) headers. It automatically generates nested output directories and index files suitable for multilingual Quarto websites. Additionally, it supports <strong>Ruby annotation parsing</strong> and <strong>auto-ID generation</strong> from Japanese or multilingual headers.</p>
+<hr>
+</section>
+<section id="input" class="level2">
+<h2 class="anchored" data-anchor-id="input">📥 Input</h2>
+<section id="input-files" class="level3">
+<h3 class="anchored" data-anchor-id="input-files">1. <strong>Input Files</strong></h3>
 <ul>
-<li><a href="../../journal/en/"><strong>Journal</strong></a></li>
-</ul>
-<!-- -->
-<p>This is my worklog.<!-- --></p>
-<!-- -->
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">2025/06/22</h3>
-<!-- -->
+<li><p>Must be named with the pattern:</p>
+<pre><code>master-&lt;lang_id&gt;.qmd</code></pre>
 <ul>
-<li><a href="../../journal/worklog-20250622/en/">2025/06/22</a>
-<ul>
-<li><a href="../../journal/worklog-20250622/en/#13:00:00-±-—-Starting-today's-work">13:00:00 ± — Starting today’s work.</a></li>
-<li><a href="../../journal/worklog-20250622/en/#13:11:28-Fixed-an-issue-that-images-in-rhythmpediacom-are-shown-lager-than-the-current-screen">13:11:28 Fixed an issue that images in rhythmpedia.com are shown lager than the current screen</a></li>
-<li><a href="../../journal/worklog-20250622/en/#13:21:10-Learned-how-to-input-±-in-Unicode-Hex-Input-keyboard-in-MacOS">13:21:10 Learned how to input ± in Unicode Hex Input keyboard in MacOS</a></li>
-<li><a href="../../journal/worklog-20250622/en/#13:22:16-—-Starting-a-break">13:22:16 — Starting a break.</a></li>
-<li><a href="../../journal/worklog-20250622/en/#12:00:00-—-Starting-lunch-break">12:00:00 — Starting lunch break.</a></li>
-<li><a href="../../journal/worklog-20250622/en/#13:00:00-—-Ending-lunch-break">13:00:00 — Ending lunch break.</a></li>
-<li><a href="../../journal/worklog-20250622/en/#18:30:00-—-Beginning-end-of-day-reflection">18:30:00 — Beginning end-of-day reflection.</a></li>
-<li><a href="../../journal/worklog-20250622/en/#19:00:00-—-Finishing-today's-work">19:00:00 — Finishing today’s work.</a></li>
+<li>Example: <code>master-ja.qmd</code>, <code>master-en.qmd</code></li>
 </ul></li>
 </ul>
 </section>
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1">2025/06/21</h3>
-<!-- -->
+<section id="expected-content-format" class="level3">
+<h3 class="anchored" data-anchor-id="expected-content-format">2. <strong>Expected Content Format</strong></h3>
+<p>Each input <code>.qmd</code> file may contain:</p>
 <ul>
-<li><a href="../../journal/worklog-20250621/en/">2025/06/21</a>
+<li><strong>Preamble</strong> (optional content before the first <code>##</code>)</li>
+<li>One or more <strong>level-2 headers</strong> (<code>## Title {#id}</code> or <code>## Title</code>)</li>
+<li>Optional <strong>level-3 headers</strong> (<code>### Subsection</code>)</li>
+<li>Headers may include <strong>Ruby annotations</strong> (e.g., <code>&lt;ruby&gt;漢字&lt;rt&gt;ふりがな&lt;/rt&gt;&lt;/ruby&gt;</code>)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="parsing-logic" class="level2">
+<h2 class="anchored" data-anchor-id="parsing-logic">🔍 Parsing Logic</h2>
+<section id="header-detection" class="level3">
+<h3 class="anchored" data-anchor-id="header-detection">1. <strong>Header Detection</strong></h3>
+<section id="level-2-headers" class="level4">
+<h4 class="anchored" data-anchor-id="level-2-headers">Level-2 (<code>##</code>) Headers</h4>
 <ul>
-<li><a href="../../journal/worklog-20250621/en/#2025/06/21-00:03:10---Created-this-file">2025/06/21 00:03:10 - Created this file.</a></li>
-<li><a href="../../journal/worklog-20250621/en/#15:30:25-—-Starting-today's-work">15:30:25 — Starting today’s work.</a></li>
-<li><a href="../../journal/worklog-20250621/en/#15:30:27-Asked-about-&quot;Dog-on-It&quot;">15:30:27 Asked about “Dog on It”.</a></li>
-<li><a href="../../journal/worklog-20250621/en/#16:35:50-Created-a-post-to-explain-about-a-pun-and-made-ChatGPT-analyze-the-post">16:35:50 Created a post to explain about a pun and made ChatGPT analyze the post.</a></li>
-<li><a href="../../journal/worklog-20250621/en/#21:00:00?-Asked-about-an-idea-named-&quot;Maximum-Coda-Principle&quot;">21:00:00? Asked about an idea named “Maximum Coda Principle”</a></li>
-<li><a href="../../journal/worklog-20250621/en/#01:46:21-—-Asked-about-Japanese-translation-for-Mora">01:46:21 — Asked about Japanese translation for Mora</a></li>
-<li><a href="../../journal/worklog-20250621/en/#02:01:04-Asked-about-a-way-to-change-the-starting-level-of-headers-of-a-text-with-Pandoc">02:01:04 Asked about a way to change the starting level of headers of a text with Pandoc</a></li>
-<li><a href="../../journal/worklog-20250621/en/#02:31:07-Updated-the-`mdinchdr`-command-to-change-the-header-with-a-specified-level">02:31:07 Updated the <code>mdinchdr</code> command to change the header with a specified level</a></li>
-<li><a href="../../journal/worklog-20250621/en/#03:58:04-Revised-the-design-of-`theconceptualleapcom`">03:58:04 Revised the design of <code>theconceptualleap.com</code></a></li>
-<li><a href="../../journal/worklog-20250621/en/#05:20:19-Wrote-and-revise-the-explanation-of-mora-tmed-rhythm-and-commited">05:20:19 Wrote and revise the explanation of mora-tmed rhythm and commited</a></li>
-<li><a href="../../journal/worklog-20250621/en/#05:42:19-Made-some-commits-for-Rhythmpediacom-and-theconceptualleapcom">05:42:19 Made some commits for Rhythmpedia.com and theconceptualleap.com</a></li>
-<li><a href="../../journal/worklog-20250621/en/#05:43:01-—-Finishing-today's-work">05:43:01 — Finishing today’s work.</a></li>
+<li><p>Matched with:</p>
+<pre class="regex"><code>^## (.+?)(?:\s*\{#([^\}]+)\})?\s*$</code></pre></li>
+<li><p>Extracted:</p>
+<ul>
+<li><code>Title</code>: Group 1</li>
+<li><code>ID</code>: Group 2 (if present); otherwise auto-generated</li>
 </ul></li>
 </ul>
 </section>
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">2025/06/20</h3>
-<!-- -->
+<section id="level-3-headers" class="level4">
+<h4 class="anchored" data-anchor-id="level-3-headers">Level-3 (<code>###</code>) Headers</h4>
 <ul>
-<li><a href="../../journal/worklog-20250620/en/">2025/06/20</a>
+<li><p>Matched with:</p>
+<pre class="regex"><code>^### (.+?)(?:\s*\{#([^\}]+)\})?\s*$</code></pre></li>
+</ul>
+</section>
+</section>
+<section id="auto-id-generation" class="level3">
+<h3 class="anchored" data-anchor-id="auto-id-generation">2. <strong>Auto ID Generation</strong></h3>
+<p>If no <code>{#id}</code> is given:</p>
 <ul>
-<li><a href="../../journal/worklog-20250620/en/#09:37:03-—-Starting-today's-work">09:37:03 — Starting today’s work.</a></li>
-<li><a href="../../journal/worklog-20250620/en/#18:14:33-—-Restart-the-work">18:14:33 — Restart the work.</a></li>
-<li><a href="../../journal/worklog-20250620/en/#18:22:46-Asked-if-a-sentense-written-by-a-stress-timed-language-be-read-as-syllable-timed-language">18:22:46 Asked if a sentense written by a stress-timed language be read as syllable-timed language.</a></li>
-<li><a href="../../journal/worklog-20250620/en/#19:47:33-Fixed-an-issue-the-pandoc-header-level-converter-breaks-GFM-tables">19:47:33 Fixed an issue the pandoc header level converter breaks GFM tables.</a></li>
-<li><a href="../../journal/worklog-20250620/en/#21:05:13-Started-to-write-the-explanation-about-liaison">21:05:13 Started to write the explanation about liaison</a></li>
-<li><a href="../../journal/worklog-20250620/en/#03:34:56-Ask-the-term-to-express-when-glottal-stop-insertion-is-not-occurred-but-there-is-still-a-pause">03:34:56 Ask the term to express when glottal stop insertion is not occurred but there is still a pause.</a></li>
-<li><a href="../../journal/worklog-20250620/en/#18:30:00-—-Beginning-end-of-day-reflection">18:30:00 — Beginning end-of-day reflection.</a></li>
-<li><a href="../../journal/worklog-20250620/en/#19:00:00-—-Finishing-today's-work">19:00:00 — Finishing today’s work.</a></li>
+<li><p>ID is <strong>generated</strong> from base text (after stripping Ruby):</p>
+<ul>
+<li><p>Removes non-word characters except:</p>
+<ul>
+<li>Japanese (<code>\u4e00–\u9fff</code>, <code>\u3040–\u30ff</code>)</li>
+<li>CJK punctuation (<code>\u3000–\u303f</code>)</li>
+</ul></li>
+<li><p>Normalizes to:</p>
+<pre><code>slugified-id = re.sub( disallowed, '-', ruby_base_text ).strip('-')</code></pre></li>
 </ul></li>
 </ul>
 </section>
-<section id="section-3" class="level3">
-<h3 class="anchored" data-anchor-id="section-3">2025/06/19</h3>
-<!-- -->
+<section id="ruby-annotation-handling" class="level3">
+<h3 class="anchored" data-anchor-id="ruby-annotation-handling">3. <strong>Ruby Annotation Handling</strong></h3>
+<p>Ruby is stripped using an <code>HTMLParser</code> subclass:</p>
 <ul>
-<li><a href="../../journal/worklog-20250619/en/">2025/06/19</a>
-<ul>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-13:18:52-Starting-today's-work">2025/06/19 13:18:52 Starting today’s work.</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-14:50:55-Asked-if-a-glottal-stop-can-replace-the-onset">2025/06/19 14:50:55 Asked if a glottal stop can replace the onset</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-14:53:19-Continue-the-previous-task">2025/06/19 14:53:19 Continue the previous task</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-15:44:24-Asked-about-the-tense-we-should-use-when-you-are-writing-a-work-log">2025/06/19 15:44:24 Asked about the tense we should use when you are writing a work log</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-15:37:24-Change-the-defaut-how-the-images-are-shown-in-Rhythmpedia">2025/06/19 15:37:24 Change the defaut how the images are shown in Rhythmpedia</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-16:12:11-Added-some-modification-on-the-images-about-mora">2025/06/19 16:12:11 Added some modification on the images about mora</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-20:10:19-I-have-just-learned-a-new-term-'resyllabification'">2025/06/19 20:10:19 I have just learned a new term ‘resyllabification’</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/19-23:36:07-Asked-if-my-IDs-work-well-for-rhyming">2025/06/19 23:36:07 Asked if my IDs work well for rhyming</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/20-00:00:00?-Left-Haneda-Airport-Terminal-3">2025/06/20 00:00:00? Left Haneda Airport Terminal 3</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/20-01:30:00?-Asked-about-the-difference-between-GA-and-AAVE">2025/06/20 01:30:00? Asked about the difference between GA and AAVE</a></li>
-<li><a href="../../journal/worklog-20250619/en/#18:30:00-—-Beginning-end-of-day-reflection">18:30:00 — Beginning end-of-day reflection.</a></li>
-<li><a href="../../journal/worklog-20250619/en/#2025/06/20-02:50:07-—-Finishing-today's-work">2025/06/20 02:50:07 — Finishing today’s work.</a></li>
-</ul></li>
+<li><code>&lt;rt&gt;</code> content (furigana) is removed</li>
+<li>Only <strong>visible text</strong> (base of the ruby) is preserved</li>
+<li>Supports both <code>&lt;ruby&gt;&lt;rb&gt;…&lt;/rb&gt;&lt;rt&gt;…&lt;/rt&gt;&lt;/ruby&gt;</code> and <code>&lt;ruby&gt;…&lt;rt&gt;…&lt;/rt&gt;&lt;/ruby&gt;</code> styles</li>
 </ul>
+<hr>
+</section>
+</section>
+<section id="output" class="level2">
+<h2 class="anchored" data-anchor-id="output">📦 Output</h2>
+<section id="directory-structure" class="level3">
+<h3 class="anchored" data-anchor-id="directory-structure">1. <strong>Directory Structure</strong></h3>
+<p>For each <code>##</code> section in <code>master-&lt;lang_id&gt;.qmd</code>, output is:</p>
+<pre><code>&lt;base_dir&gt;/
+├── &lt;section_id&gt;/
+│   └── &lt;lang_id&gt;/
+│       └── index.qmd      ← full section contents
+├── &lt;lang_id&gt;/
+│   └── index.qmd          ← master TOC + preamble</code></pre>
+</section>
+<section id="file-contents" class="level3">
+<h3 class="anchored" data-anchor-id="file-contents">2. <strong>File Contents</strong></h3>
+<section id="a.-section-file-index.qmd" class="level4">
+<h4 class="anchored" data-anchor-id="a.-section-file-index.qmd">a. Section File (<code>index.qmd</code>)</h4>
+<p>Each file contains:</p>
+<ul>
+<li>The full content of the <code>##</code> block (including body and any <code>###</code> children)</li>
+</ul>
+</section>
+<section id="b.-master-index-lang_idindex.qmd" class="level4">
+<h4 class="anchored" data-anchor-id="b.-master-index-lang_idindex.qmd">b. Master Index (<code>&lt;lang_id&gt;/index.qmd</code>)</h4>
+<p>Auto-generated <code>## Contents</code> section:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contents</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Section Title](section-id/)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>Section description (text between <span class="in">`##`</span> and first <span class="in">`###`</span>, if any)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Next Section](...)</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If any <strong>preamble</strong> text exists (before first <code>##</code>), it is placed before <code>## Contents</code>.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="behavioral-summary" class="level2">
+<h2 class="anchored" data-anchor-id="behavioral-summary">🧠 Behavioral Summary</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 34%">
+<col style="width: 65%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🗂️ Multi-section splitting</td>
+<td>Each level-2 section becomes a file</td>
+</tr>
+<tr class="even">
+<td>🏷️ ID extraction + fallback</td>
+<td>Uses <code>{#id}</code> or auto-generates from base text</td>
+</tr>
+<tr class="odd">
+<td>🔤 Ruby stripping support</td>
+<td>Properly ignores <code>&lt;rt&gt;</code> (furigana)</td>
+</tr>
+<tr class="even">
+<td>🌐 Multilingual support</td>
+<td>Detected via file name (<code>master-ja.qmd</code> → <code>ja</code>)</td>
+</tr>
+<tr class="odd">
+<td>📁 Recursive mkdir</td>
+<td>Uses <code>mkdir(parents=True, exist_ok=True)</code> for safe creation</td>
+</tr>
+<tr class="even">
+<td>📑 Subsection awareness</td>
+<td>Captures presence of <code>###</code> but doesn’t yet write them separately</td>
+</tr>
+<tr class="odd">
+<td>📄 Section description extraction</td>
+<td>Captures paragraph between <code>##</code> and first <code>###</code></td>
+</tr>
+<tr class="even">
+<td>🔄 Re-entrant</td>
+<td>Can run multiple times without errors (safe overwrite)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="program-flow" class="level2">
+<h2 class="anchored" data-anchor-id="program-flow">⚙️ Program Flow</h2>
+<section id="discover-input-files" class="level3">
+<h3 class="anchored" data-anchor-id="discover-input-files">1. Discover input files</h3>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Path(<span class="st">'.'</span>).glob(<span class="st">'master-*.qmd'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="for-each-file" class="level3">
+<h3 class="anchored" data-anchor-id="for-each-file">2. For each file:</h3>
+<ul>
+<li>Extract <code>lang_id</code> from filename</li>
+<li>Call <code>split_qmd(input_file, lang_id)</code></li>
+</ul>
+</section>
+<section id="in-split_qmd..." class="level3">
+<h3 class="anchored" data-anchor-id="in-split_qmd...">3. In <code>split_qmd(...)</code>:</h3>
+<ul>
+<li><p>Parse input file</p></li>
+<li><p>For each <code>##</code> section:</p>
+<ul>
+<li><p>Extract <code>h2_title</code>, <code>h2_id</code>, <code>h2_block</code></p></li>
+<li><p>Detect child <code>###</code> blocks</p></li>
+<li><p>Extract <code>h2_description</code> (pre-<code>###</code> content)</p></li>
+<li><p>Write to:</p>
+<pre><code>./&lt;h2_id&gt;/&lt;lang_id&gt;/index.qmd</code></pre></li>
+</ul></li>
+<li><p>Write <code>index.qmd</code> under <code>./&lt;lang_id&gt;/</code> with links</p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="limitations-to-do" class="level2">
+<h2 class="anchored" data-anchor-id="limitations-to-do">⚠️ Limitations / To-Do</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 53%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area</th>
+<th>Limitation</th>
+<th>Possible Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>###</code> splitting</td>
+<td><code>###</code> blocks are detected but not split into files</td>
+<td>Add per-subsection split mode</td>
+</tr>
+<tr class="even">
+<td>Duplicate IDs</td>
+<td>No check for ID collisions</td>
+<td>Add validation or auto-suffix</td>
+</tr>
+<tr class="odd">
+<td>Header nesting</td>
+<td>Only <code>##</code> and <code>###</code> are processed</td>
+<td>Extend for deeper levels</td>
+</tr>
+<tr class="even">
+<td>CLI usability</td>
+<td>No CLI arguments</td>
+<td>Add <code>argparse</code> or CLI wrapper</td>
+</tr>
+<tr class="odd">
+<td>Quarto YAML</td>
+<td>No automatic <code>_quarto.yml</code> generation</td>
+<td>Add sidebar + TOC automation</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="example-case" class="level2">
+<h2 class="anchored" data-anchor-id="example-case">🧪 Example Case</h2>
+<section id="input-master-ja.qmd" class="level3">
+<h3 class="anchored" data-anchor-id="input-master-ja.qmd">Input: <code>master-ja.qmd</code></h3>
+<div class="sourceCode" id="cb9"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 前書き</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>これはイントロです。</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## 日本語のリズムとは {#japanese-rhythm}</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>イントロ段落。</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="fu">### タイミングの問題</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>説明...</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="fu">## 第二章</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>別のセクション</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="output-1" class="level3">
+<h3 class="anchored" data-anchor-id="output-1">Output:</h3>
+<section id="directory-structure-1" class="level4">
+<h4 class="anchored" data-anchor-id="directory-structure-1">Directory Structure:</h4>
+<pre><code>.
+├── japanese-rhythm/
+│   └── ja/
+│       └── index.qmd
+├── 第二章/
+│   └── ja/
+│       └── index.qmd
+├── ja/
+│   └── index.qmd</code></pre>
+</section>
+<section id="jaindex.qmd" class="level4">
+<h4 class="anchored" data-anchor-id="jaindex.qmd"><code>ja/index.qmd</code>:</h4>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># 前書き</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>これはイントロです。</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Contents</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### [日本語のリズムとは](japanese-rhythm/)</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>イントロ段落。</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="fu">### [第二章](第二章/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<p>If you want, I can generate:</p>
+<ul>
+<li>A test fixture set</li>
+<li>A sample CLI wrapper (<code>split-qmd.py --input master-ja.qmd</code>)</li>
+<li><code>_quarto.yml</code> auto-updater script for navigation linking</li>
+</ul>
+<p>Would you like that?</p>
 
 
+</section>
+</section>
 </section>
 </section>
 
@@ -887,18 +1160,6 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-<nav class="page-navigation column-body">
-  <div class="nav-page nav-page-previous">
-      <a href="../../notes/chat20250619/en/index.html" class="pagination-link" aria-label="2025/06/19 GA and AAVE">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">2025/06/19 GA and AAVE</span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../journal/worklog-20250622/en/index.html" class="pagination-link" aria-label="2025/06/22">
-        <span class="nav-page-text">2025/06/22</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
@@ -910,7 +1171,7 @@ ul.task-list li input[type="checkbox"] {
     </div>
     <div class="nav-footer-right">
 <div class="line-block"></div>
-<p><a href="../../about/publisher/en/">About the Publisher</a> |<a href="../../about/theconceptualleap/en/">About This Site</a> |<a href="../../contact/en/">Contact</a> |<a href="../../contact-form/en/">Send a Message</a> |<a href="../../disclaimer/en/">Disclaimer</a> |<br>|<a href="../../privacy-policy/en/">Privacy Policy</a> |<a href="../../cookies/en/">Cookie Policy</a> |<a href="#" id="cookie-settings" rel="nofollow">Cookie Preferences</a> |</p>
+<p><a href="../../../../../../about/publisher/en/">About the Publisher</a> |<a href="../../../../../../about/theconceptualleap/en/">About This Site</a> |<a href="../../../../../../contact/en/">Contact</a> |<a href="../../../../../../contact-form/en/">Send a Message</a> |<a href="../../../../../../disclaimer/en/">Disclaimer</a> |<br>|<a href="../../../../../../privacy-policy/en/">Privacy Policy</a> |<a href="../../../../../../cookies/en/">Cookie Policy</a> |<a href="#" id="cookie-settings" rel="nofollow">Cookie Preferences</a> |</p>
 </div>
   </div>
 </footer>

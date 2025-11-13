@@ -20,6 +20,7 @@ resources:
   - attachments/*
   - common-ly/*.ly
   - common-ly/shared/*.ly
+  - assets/fonts/*
 
 website:
   title: "The Conceptual Leap"

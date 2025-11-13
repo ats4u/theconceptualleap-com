@@ -1,5 +1,5 @@
 ---
-title: Journal
+title: Notes
 created: 2025-11-12T17:31:01
 tags:
   - foo
@@ -7,7 +7,7 @@ rhythmpress-preproc: split
 rhythmpress-preproc-args: []
 ---
 
-This is my worklog.
+These are my notes that I wrote when I was thinking about my works.
 
 ## 2025/06/19 GA and AAVE <!-- {#chat20250619} -->
 

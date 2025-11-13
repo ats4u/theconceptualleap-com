@@ -21,14 +21,6 @@ This website is currently like a personal playground for a Japanese guy. He has 
 
 Right now, he’s keeping work logs in English to practice — like this:
 
-
-## Notes
-He has a growing interest in various English dialects, as shown below:
-
-[20250619-GA-and-AAVE](journal/20250619-GA-and-AAVE.md)
-
-## Foo
-
 ```{python}
 #| output: asis
 print("HOOO")

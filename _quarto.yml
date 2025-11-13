@@ -51,7 +51,7 @@ website:
   sidebar:
     style: "docked"
     # logo: /attachments/site-logo-light.png
-    collapse-level: 1
+    collapse-level: 2
     contents: []
 metadata:
   lilypond-preamble: "common-ly/lilypond-preamble.ly"

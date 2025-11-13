@@ -29,4 +29,4 @@ out = rhythmpress.create_global_navigation( '_rhythmpress.conf', 'en', strict=Fa
 print(out)
 ```
 
-<!-- JOdlVTkY5nsuMw2bXN6x+A== -->
+<!-- yFTmU0eUQfCZS5j7zSulmw== -->

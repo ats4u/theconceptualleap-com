@@ -6,7 +6,8 @@ project:
     port: 5152
     browser: false
   render:
-    - "**/*.qmd"        # render only qmd
+    - "**/*.qmd"        # render qmd
+    - "**/*.md"         # render md
     - "!**/master*.md"  # explicitly ignore master*.md anywhere 
     - "!**/master*.qmd" # explicitly ignore master*.md anywhere 
     - "!drafts/*"       # exclude paths
@@ -43,14 +44,14 @@ website:
   page-navigation: true     # show Previous / Next buttons in the footer
   bread-crumbs: true
   navbar:
-    logo: /attachments/site-logo-light.png
+    # logo: /attachments/site-logo-light.png
     right:
       - href: index.qmd
-        text: "トップに戻る"
+        text: "Home"
   sidebar:
     style: "docked"
-    logo: /attachments/site-logo-light.png
-    collapse-level: 1
+    # logo: /attachments/site-logo-light.png
+    collapse-level: 2
     contents: []
 metadata:
   lilypond-preamble: "common-ly/lilypond-preamble.ly"

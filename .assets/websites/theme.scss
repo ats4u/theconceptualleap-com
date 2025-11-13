@@ -8,6 +8,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Schoolbell&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Schoolbell&display=swap');
 
+
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("/assets/fonts/texgyrepagella-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("/assets/fonts/texgyrepagella-italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("/assets/fonts/texgyrepagella-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TeX Gyre Pagella";
+  src: url("/assets/fonts/texgyrepagella-bolditalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
 body {}
 
 /* Hide the "On This Page" caption on the right sidebar.*/
@@ -240,10 +267,17 @@ body {
     font-size : 0.85em;
   */
 
+  font-family: "TeX Gyre Pagella";
+  font-weight: 400;
+  font-size : 1.1em;
+  font-style: normal;
+
+  /*
   font-family: "Charis SIL", serif;
   font-weight: 400;
   font-style: normal;
   font-size : 1.1em;
+  */
 
   /*
   font-family: "M PLUS 1", sans-serif;

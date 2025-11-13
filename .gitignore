@@ -5,4 +5,6 @@
 *.~undo-tree~
 .venv
 .obsidian
-
+*.zip
+*.gz
+*generated.*

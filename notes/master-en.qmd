@@ -9,6 +9,30 @@ rhythmpress-preproc-args: []
 
 These are my notes that I wrote when I was thinking about my works.
 
+
+## Grumbling in Japan {#grumbling-in-japan}
+
+### Working in the Japanese IT Industry {#working-in-japanese-it-industry}
+
+What happens when a rural Thai village understands your “work” better than the Japanese IT industry? This chapter traces my journey from being dismissed as a Linux-obsessed oddball in 2009 to discovering that, even in 2025, Japan still treats technical curiosity as a crime. If you’ve ever been told that your skills are “just playing around,” this one will resonate.
+
+--------
+
+When I was in a rural area in Northeast Thailand, I spent endless hours facing the computer to learn how to use Ubuntu 9.04. Even when someone asked, "What are you doing?" and I answered "Work," it somehow didn't land right, and they just thought I was playing around.
+
+So after a while, I asked, "Why is there so much pushback against this?!" The response was, "Well, from the perspective of the people here, real work means getting your hands pitch-black and covered in mud, so what you're doing looks just like playing around... It's not surprising they'd think that." And I was like, yeah... I get it.
+
+I was living in the countryside because I admired farming, so I don't mean to belittle agriculture at all, but let's be honest—the rural areas aren't exactly prosperous, and learning how to use Linux probably had a higher chance of making money. But to the locals, it was like, "Ubuntu? Can you eat that?" Still, that's that, and I was living in the countryside anyway. This was back in 2009.
+
+In 2009, using Linux for work made you a madman, and just bringing it up marked you as a weirdo. But now it's 2025. Times have changed. Knowing your way around Linux is a huge advantage these days. So yeah, that's my win... or so you'd think.
+
+Even now, bringing up Linux still gets you treated like a freak. If I ask, "Do you know what powers the backend of AWS?" they just go ??? 
+
+A country that dismisses what I was doing in 2009 as "just killing time" is essentially no different from the old ladies in Thai villages. That's Japan's IT industry for you.
+
+Think about how risky it was to switch to Ubuntu back in 2009. Even in 2025, just using Ubuntu on the desktop gets you labeled a pervert. Anything that can't be measured by existing values is all just "killing time," huh.
+
+
 ## Jazz is the Kotodama of English <!-- {#jazz-is-the-kotodama-of-english} -->
 
 To understand English, you must feel its rhythm --- and that rhythm lives in jazz. Discover why vocabulary alone can never reveal the emotions behind English, and how Offbeat Counting opens the door to both groove and language.

@@ -3,11 +3,14 @@
 // @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=M+PLUS+1:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 // @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Schoolbell&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Schoolbell&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&display=swap');
+
+/*
+// @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Schoolbell&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&family=Schoolbell&display=swap');
 
 @font-face {
   font-family: "TeX Gyre Pagella";
@@ -33,9 +36,18 @@
   font-weight: 700;
   font-style: italic;
 }
+*/
 
 
-body {}
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+}
 
 /* Hide the "On This Page" caption on the right sidebar.*/
 #quarto-sidebar>h2,
@@ -267,10 +279,16 @@ body {
     font-size : 0.85em;
   */
 
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+
+  /*
   font-family: "TeX Gyre Pagella";
   font-weight: 400;
   font-size : 1.1em;
   font-style: normal;
+  */
 
   /*
   font-family: "Charis SIL", serif;

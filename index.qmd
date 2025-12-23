@@ -29,4 +29,4 @@ out = rhythmpress.create_global_navigation( '_rhythmpress.conf', 'en', strict=Fa
 print(out)
 ```
 
-<!-- yFTmU0eUQfCZS5j7zSulmw== -->
+<!-- 20251223-151524+0900 -->
